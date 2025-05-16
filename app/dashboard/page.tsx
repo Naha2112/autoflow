@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function DashboardPage() {
   return (
@@ -18,7 +19,7 @@ export default function DashboardPage() {
           </CardContent>
           <CardFooter>
             <Button variant="outline" size="sm" asChild>
-              <a href="/invoices">View All</a>
+              <Link href="/invoices">View All</Link>
             </Button>
           </CardFooter>
         </Card>
@@ -34,7 +35,7 @@ export default function DashboardPage() {
           </CardContent>
           <CardFooter>
             <Button variant="outline" size="sm" asChild>
-              <a href="/clients">View All</a>
+              <Link href="/clients">View All</Link>
             </Button>
           </CardFooter>
         </Card>
@@ -50,7 +51,7 @@ export default function DashboardPage() {
           </CardContent>
           <CardFooter>
             <Button variant="outline" size="sm" asChild>
-              <a href="/automation">Configure</a>
+              <Link href="/automation">Configure</Link>
             </Button>
           </CardFooter>
         </Card>
