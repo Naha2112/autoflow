@@ -1,10 +1,10 @@
-import "./globals.css"
-import type { Metadata } from "next"
+import './globals.css';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "AutoFlow",
-  description: "Automated invoicing and client management system",
-}
+  title: 'AutoFlow',
+  description: 'Invoicing and client management system',
+};
 
 export default function RootLayout({
   children,
@@ -13,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  )
-}
+  );
+} 

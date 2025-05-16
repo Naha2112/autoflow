@@ -3,23 +3,20 @@ import prisma from '@/lib/prisma';
 
 export async function GET() {
   try {
-    // Simple DB check that doesn't require any specific schema
-    const result = await prisma.$queryRaw`SELECT 1 as connected`;
+    // Test prisma connection with a simple query
+    const result = await prisma.$queryRaw`SELECT 1 as test`;
     
     return NextResponse.json({
       status: 'ok',
-      message: 'API is healthy',
-      prisma: {
-        status: 'connected', 
-        result
-      }
-    });
+      message: 'System is healthy',
+      database: 'connected',
+      test: result
+    }, { status: 200 });
   } catch (error: any) {
     console.error('Health check failed:', error);
-    
     return NextResponse.json({
       status: 'error',
-      message: 'API health check failed',
+      message: 'System health check failed',
       error: error.message
     }, { status: 500 });
   }

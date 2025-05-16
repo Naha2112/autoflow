@@ -1,40 +1,25 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main style={{ 
-      display: 'flex',
-      minHeight: '100vh',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '24px'
-    }}>
-      <h1 style={{ 
-        fontSize: '2.25rem',
-        fontWeight: 'bold',
-        marginBottom: '1.5rem'
-      }}>
+    <main style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+      <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>
         Welcome to AutoFlow
       </h1>
-      <p style={{ 
-        fontSize: '1.125rem',
-        marginBottom: '1rem'
-      }}>
+      <p style={{ marginBottom: '2rem' }}>
         Your automated invoicing and client management system
       </p>
-      <div style={{ marginTop: '2rem' }}>
-        <a 
-          href="/api/health" 
-          style={{
-            backgroundColor: '#3b82f6',
-            color: 'white',
-            padding: '0.5rem 1rem',
-            borderRadius: '0.375rem',
-            textDecoration: 'none'
-          }}
-        >
-          Check API Health
-        </a>
-      </div>
+      <a
+        href="/api/health"
+        style={{
+          display: 'inline-block',
+          padding: '0.5rem 1rem',
+          backgroundColor: '#0070f3',
+          color: 'white',
+          textDecoration: 'none',
+          borderRadius: '0.25rem',
+        }}
+      >
+        Check API Health
+      </a>
     </main>
   );
-}
+} 
