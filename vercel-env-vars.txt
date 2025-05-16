@@ -1,0 +1,16 @@
+# Copy and add these environment variables to your Vercel project
+
+# Required for NextAuth.js
+NEXTAUTH_SECRET=b9c39261a342bcef1e0e956aee7db6a9a05cd49fcbbc98a67b5b34dbcc8c1f32
+NEXTAUTH_URL=https://webtechs.site
+NEXTAUTH_URL_INTERNAL=https://webtechs.site
+
+# Required for cron jobs
+CRON_SECRET=7f89a3b162d459a2e6efb24dd5b43e2c8a09ab6472f28c5e9d4a8d58c6d7f123
+
+# Email configuration (update with your actual email provider details)
+EMAIL_SERVER_HOST=smtp.example.com
+EMAIL_SERVER_PORT=587
+EMAIL_SERVER_USER=your-email@example.com
+EMAIL_SERVER_PASSWORD=your-email-password
+EMAIL_FROM=noreply@webtechs.site 
