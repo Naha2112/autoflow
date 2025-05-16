@@ -3,20 +3,19 @@ import prisma from '@/lib/prisma';
 
 export async function GET() {
   try {
-    // Test prisma connection with a simple query
+    // Simple operation that should work regardless of schema
     const result = await prisma.$queryRaw`SELECT 1 as test`;
     
     return NextResponse.json({
       status: 'ok',
-      message: 'System is healthy',
-      database: 'connected',
-      test: result
-    }, { status: 200 });
+      message: 'Prisma connection successful',
+      result
+    });
   } catch (error: any) {
-    console.error('Health check failed:', error);
+    console.error('Prisma test failed:', error);
     return NextResponse.json({
       status: 'error',
-      message: 'System health check failed',
+      message: 'Prisma connection failed',
       error: error.message
     }, { status: 500 });
   }

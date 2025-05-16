@@ -6,8 +6,8 @@ import { Providers } from "@/components/providers"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AutoFlow - Automate Your Invoicing Workflow",
-  description: "A streamlined platform for managing invoices, clients and automated communications",
+  title: "AutoFlow",
+  description: "Automated invoicing and client management system",
 }
 
 export default function RootLayout({
