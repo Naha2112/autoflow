@@ -1,12 +1,36 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold mb-6">Welcome to AutoFlow</h1>
-      <p className="text-lg mb-4">Your automated invoicing and client management system</p>
-      <div className="mt-8">
+    <main style={{ 
+      display: 'flex',
+      minHeight: '100vh',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '24px'
+    }}>
+      <h1 style={{ 
+        fontSize: '2.25rem',
+        fontWeight: 'bold',
+        marginBottom: '1.5rem'
+      }}>
+        Welcome to AutoFlow
+      </h1>
+      <p style={{ 
+        fontSize: '1.125rem',
+        marginBottom: '1rem'
+      }}>
+        Your automated invoicing and client management system
+      </p>
+      <div style={{ marginTop: '2rem' }}>
         <a 
           href="/api/health" 
-          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+          style={{
+            backgroundColor: '#3b82f6',
+            color: 'white',
+            padding: '0.5rem 1rem',
+            borderRadius: '0.375rem',
+            textDecoration: 'none'
+          }}
         >
           Check API Health
         </a>
