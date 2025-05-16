@@ -7,19 +7,6 @@ export default function HomePage() {
       <p style={{ marginBottom: '2rem' }}>
         Your automated invoicing and client management system
       </p>
-      <a
-        href="/api/health"
-        style={{
-          display: 'inline-block',
-          padding: '0.5rem 1rem',
-          backgroundColor: '#0070f3',
-          color: 'white',
-          textDecoration: 'none',
-          borderRadius: '0.25rem',
-        }}
-      >
-        Check API Health
-      </a>
     </main>
   );
 } 
