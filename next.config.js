@@ -4,15 +4,6 @@ const nextConfig = {
   images: {
     domains: ['webtechs.site'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/dashboard',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 module.exports = nextConfig 
